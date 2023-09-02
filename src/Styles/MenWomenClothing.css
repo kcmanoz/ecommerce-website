@@ -1,0 +1,33 @@
+.men-category {
+  text-align: center;
+  margin: 20px;
+}
+
+.men-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.men-item {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.men-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item-details h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.item-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}

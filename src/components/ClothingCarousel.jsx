@@ -27,6 +27,7 @@ const ClothingCarousel = ({ images }) => {
 
   return (
     <div className="clothing-carousel">
+      <h3>Trending</h3>
       <button
         className="prev-button"
         onClick={prevSlide}
@@ -68,7 +69,6 @@ const ClothingStoreCarousel = () => {
 
   return (
     <div>
-      <h2>Trending</h2>
       <ClothingCarousel images={images} />
     </div>
   );

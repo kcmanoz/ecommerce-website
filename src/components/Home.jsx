@@ -4,9 +4,9 @@ import trend from "../Images/Header/trending.jpg";
 import shoes from "../Images/Header/footwear.jpg";
 import men from "../Images/Header/men-clothing.jpg";
 import women from "../Images/Header/women-clothing.jpg";
-import "../Styles/header.css";
+import "../Styles/home.css";
 
-function Header() {
+function Home() {
   return (
     <>
       <div className="home-container">
@@ -47,4 +47,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Home;

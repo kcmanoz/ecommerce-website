@@ -12,10 +12,14 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/about">About</Link>
+            <Link to="/mens">Men's Clothing</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/womens">Women's Clothing</Link>
+          </li>
+
+          <li className="navbar-item">
+            <Link to="/shoes">Shoes</Link>
           </li>
         </ul>
       </nav>
