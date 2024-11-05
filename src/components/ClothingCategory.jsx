@@ -1,15 +1,15 @@
 import React from "react";
-import "../Styles/MenWomenClothing.css";
+import "../Styles/ClothingCategory.css";
 
-const MenClothing = ({ items }) => {
-  const menItems = items.filter((item) => item.category === "men");
+const ClothingCategory = ({ items, category }) => {
+  const filteredItems = items.filter((item) => item.category === category);
 
   return (
-    <div className="men-category">
-      <h2>Men's Clothing</h2>
-      <div className="men-items">
-        {menItems.map((item) => (
-          <div key={item.id} className="men-item">
+    <div className="clothing-category">
+      <h2>{category === "men" ? "Men's Clothing" : "Women's Clothing"}</h2>
+      <div className="clothing-items">
+        {filteredItems.map((item) => (
+          <div key={item.id} className="clothing-item">
             <img src={item.img} alt={item.description} />
             <div className="item-details">
               <h3>{item.description}</h3>
@@ -24,4 +24,4 @@ const MenClothing = ({ items }) => {
   );
 };
 
-export default MenClothing;
+export default ClothingCategory;

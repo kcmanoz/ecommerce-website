@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import MenClothing from './components/MenClothing';
-import WomenClothing from './components/WomenClothing';
 import { Items } from './components/Data';
 import TrendingSlider from './components/TrendingSlider';
+import ClothingCategory from './components/ClothingCategory';
 
 function App() {
   return (
@@ -13,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mens" element={<MenClothing items={Items} />} />
-        <Route path="/womens" element={<WomenClothing items={Items} />} />
+        <Route path="/mens" element={<ClothingCategory items={Items} category="men" />} />
+        <Route path="/womens" element={<ClothingCategory items={Items} category="women" />} />
       </Routes>
       <TrendingSlider />
     </Router>
