@@ -5,6 +5,7 @@ import Home from './components/Home';
 import { Items } from './components/Data';
 import TrendingSlider from './components/TrendingSlider';
 import ClothingCategory from './components/ClothingCategory';
+import Product from './components/ProductDetail';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/mens" element={<ClothingCategory items={Items} category="men" />} />
         <Route path="/womens" element={<ClothingCategory items={Items} category="women" />} />
+        <Route path="/product/:id" element={<Product />} />
       </Routes>
       <TrendingSlider />
     </Router>

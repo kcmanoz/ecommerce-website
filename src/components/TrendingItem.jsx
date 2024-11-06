@@ -9,7 +9,7 @@ function TrendingItem() {
     <>
       {filteredItems.map((item) => (
         <div key={item.id} className="row-item">
-          <Link to={""}>
+          <Link to={`/product/${item.id}`}>
             <div className="item-header">
               <img src={item.img} alt="product" />
             </div>

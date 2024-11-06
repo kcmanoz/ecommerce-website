@@ -1,0 +1,187 @@
+/* .product-detail {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.product-info {
+  flex: 1;
+  padding: 2rem;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.product-actions button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff0054;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-actions button:hover {
+  background-color: #ff3366;
+} */
+
+/* Container to center the content */
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Main product content wrapper */
+.product-content {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: column; /* Makes it stack vertically on smaller screens */
+}
+
+/* Product image container */
+.product-image {
+  flex: 1;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Styling for the image */
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Product info section */
+.product-info {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* Product title */
+.product-info h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* Description and other details */
+.product-specs,
+.product-sizes {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Actions (buttons) section */
+.product-actions {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.product-actions button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+}
+
+.buy-now {
+  background-color: #ff0054;
+  color: #fff;
+}
+
+.buy-now:hover {
+  background-color: #ff3366;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .product-content {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+  .product-info {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-price {
+    font-size: 1.6rem;
+  }
+
+  .product-actions button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
