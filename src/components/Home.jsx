@@ -4,7 +4,7 @@ import trend from "../Images/Header/trending.jpg";
 import shoes from "../Images/Header/footwear.jpg";
 import men from "../Images/Header/men-clothing.jpg";
 import women from "../Images/Header/women-clothing.jpg";
-import "../Styles/Home.css";
+import "../Styles/HomeStyle.css";
 
 function Home() {
   return (
