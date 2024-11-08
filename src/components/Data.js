@@ -1,7 +1,7 @@
 
-import shoe1 from "../Images/shoes/shoe1.jpg";
-import shoe2 from "../Images/shoes/shoe2.jpg";
-import shoe3 from "../Images/shoes/shoe3.jpg";
+// import shoe1 from "../Images/shoes/shoe1.jpg";
+// import shoe2 from "../Images/shoes/shoe2.jpg";
+// import shoe3 from "../Images/shoes/shoe3.jpg";
 import MenDress1 from "../Images/men-clothing/men-tshirt1.jpg";
 import MenDress2 from "../Images/men-clothing/men-tshirt2.jpg";
 import MenDress3 from "../Images/men-clothing/men-jacket.jpg";

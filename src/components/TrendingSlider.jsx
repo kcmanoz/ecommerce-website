@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/TrendingSlider.css";
 import TrendingItem from "./TrendingItem";
 
@@ -22,10 +20,10 @@ function TrendingSlider() {
           <h3>Trending Now</h3>
           <div className="btns">
             <button title="scroll left" onClick={slideLeft}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <i className="fas fa-arrow-left"></i>
             </button>
             <button title="scroll right" onClick={slideRight}>
-              <FontAwesomeIcon icon={faArrowRight} />
+              <i className="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
