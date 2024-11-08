@@ -7,7 +7,7 @@ import MenDress2 from "../Images/men-clothing/men-tshirt2.jpg";
 import MenDress3 from "../Images/men-clothing/men-jacket.jpg";
 import MenDress4 from "../Images/men-clothing/men-pants.jpg";
 import MenDress5 from "../Images/men-clothing/men-tshirt.jpg";
-import MenDress6 from "../Images/men-clothing/men-jacket.jpg";
+import MenDress6 from "../Images/men-clothing/men-shirts.jpg";
 import WomenDress1 from "../Images/women-clothing/women-dress1.jpg";
 import WomenDress2 from "../Images/women-clothing/women-dress2.jpg";
 import WomenDress3 from "../Images/women-clothing/women-jeans.jpg";
@@ -36,7 +36,7 @@ export const Items = [
         description: "Comfy T-shirt",
         price: 18,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -46,9 +46,9 @@ export const Items = [
         category: "men",
         img: MenDress3,
         description: "Jacket",
-        price: 25,
+        price: 70,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -58,9 +58,9 @@ export const Items = [
         category: "men",
         img: MenDress4,
         description: "Pant",
-        price: 25,
+        price: 55,
         specs:
-            "Trending  this month.",
+            "Jeans Pants",
         size: "38, 41, 42",
 
     },
@@ -69,9 +69,9 @@ export const Items = [
         category: "men",
         img: MenDress5,
         description: "T-Shirt",
-        price: 36,
+        price: 16,
         specs:
-            "Trending T-Shirt this month.",
+            "Trending T-Shirts",
         size: "S, M, L",
 
     },
@@ -79,10 +79,10 @@ export const Items = [
         id: 6,
         category: "men",
         img: MenDress6,
-        description: "Jacket",
-        price: 40,
+        description: "Shirt",
+        price: 20,
         specs:
-            "Trending Jacket this month.",
+            "Formal Shirts",
         size: "38, 39, 42",
 
     },
@@ -95,7 +95,7 @@ export const Items = [
         description: "Summer Dress",
         price: 22,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -107,7 +107,7 @@ export const Items = [
         description: "Summer Dress",
         price: 34,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -119,7 +119,7 @@ export const Items = [
         description: "Jeans",
         price: 35,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -131,7 +131,7 @@ export const Items = [
         description: "Summer T-shirt",
         price: 15,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -142,7 +142,7 @@ export const Items = [
         description: "T-shirt",
         price: 19,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
@@ -153,7 +153,7 @@ export const Items = [
         description: "Shirt",
         price: 28,
         specs:
-            "Trending this month.",
+            "Modern Fashion",
         size: "S, M, L",
 
     },
