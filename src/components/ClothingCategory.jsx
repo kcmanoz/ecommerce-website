@@ -3,11 +3,20 @@ import "../Styles/ClothingCategory.css";
 import { Link } from "react-router-dom";
 
 const ClothingCategory = ({ items, category }) => {
+  // Filter items based on the category prop
   const filteredItems = items.filter((item) => item.category === category);
+
+  // Category titles mapped by category key
+  const categoryTitles = {
+    men: "Men's Clothing",
+    women: "Women's Clothing",
+    trending: "Trending Fashion",
+    shoes: "Shoes",
+  };
 
   return (
     <div className="clothing-category">
-      <h2>{category === "men" ? "Men's Clothing" : "Women's Clothing"}</h2>
+      <h2>{categoryTitles[category] || "Category"}</h2>
       <div className="clothing-items">
         {filteredItems.map((item) => (
           <div key={item.id} className="clothing-item">

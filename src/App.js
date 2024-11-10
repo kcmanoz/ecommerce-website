@@ -15,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/mens" element={<ClothingCategory items={Items} category="men" />} />
         <Route path="/womens" element={<ClothingCategory items={Items} category="women" />} />
+        <Route path="/shoes" element={<ClothingCategory items={Items} category="shoes" />} />
+        <Route path="/trending" element={<ClothingCategory items={Items} category="trending" />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
       <TrendingSlider />
