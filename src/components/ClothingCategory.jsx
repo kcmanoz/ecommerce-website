@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/ClothingCategory.css";
 import { Link } from "react-router-dom";
+
 const ClothingCategory = ({ items, category }) => {
   const filteredItems = items.filter((item) => item.category === category);
 
