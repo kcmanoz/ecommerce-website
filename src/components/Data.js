@@ -303,11 +303,4 @@ export const Items = [
         size: "S, M, L",
 
     },
-
-
-
-
-
-
-
 ];
