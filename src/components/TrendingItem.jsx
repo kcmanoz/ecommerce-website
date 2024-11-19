@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/TrendingSlider.css";
-import { Items } from "./Data";
+import { Items } from "../Data";
 
 const TrendingItem = () => {
   // Filter out items with odd IDs

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import { Items } from './components/Data';
+import { Items } from './Data';
 import ClothingCategory from './components/ClothingCategory';
 import ProductDetail from './components/ProductDetail';
 import Cart from "./components/Cart";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-        <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
+        <ToastContainer position="top-right" autoClose={1500} hideProgressBar />
         <Banner />
         <Footer />
       </Router>

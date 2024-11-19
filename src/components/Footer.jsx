@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/Footer.css";
 
 const Footer = () => {
@@ -16,19 +17,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/mens">Men's Fashion</a>
+              <Link to="/mens">Men's Fashion</Link>
             </li>
             <li>
-              <a href="/womens">Women's Fashion</a>
+              <Link to="/womens">Women's Fashion</Link>
             </li>
             <li>
-              <a href="/shoes">Shoes</a>
+              <Link to="/shoes">Shoes</Link>
             </li>
             <li>
-              <a href="/trending">Trending</a>
+              <Link to="/trending">Trending</Link>
             </li>
           </ul>
         </div>
@@ -38,27 +39,27 @@ const Footer = () => {
           <p>Phone: +358 </p>
           <p>Location: Tampere, Finland</p>
           <div className="social-icons">
-            <a
-              href="https://facebook.com"
+            <Link
+              to="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://instagram.com"
+            </Link>
+            <Link
+              to="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://x.com/?lang=en"
+            </Link>
+            <Link
+              to="https://x.com/?lang=en"
               target="_blank"
               rel="noopener noreferrer"
             >
               X
-            </a>
+            </Link>
           </div>
         </div>
       </div>
