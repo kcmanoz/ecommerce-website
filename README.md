@@ -1,6 +1,6 @@
 # About the project:
 
-### This application is a simple e-commerce website designed to showcase products for online shopping. It allows users to browse items across different categories, view product details, add items to their shopping cart, and proceed to checkout. The application also includes features like adjusting item quantities in the cart, removing products, and displaying a summary of the total price, including discounts. It is built with React, styled using CSS, and uses Context API for managing the cart's state. The goal is to provide a user-friendly interface with an elegant and modern design.
+ This application is a simple e-commerce website designed to showcase products for online shopping. It allows users to browse items across different categories, view product details, add items to their shopping cart, and proceed to checkout. The application also includes features like adjusting item quantities in the cart, removing products, and displaying a summary of the total price, including discounts. It is built with React, styled using CSS, and uses Context API for managing the cart's state. The goal is to provide a user-friendly interface with an elegant and modern design.
 
 ### View live at:
 
