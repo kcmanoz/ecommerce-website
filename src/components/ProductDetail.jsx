@@ -38,7 +38,7 @@ const ProductDetail = () => {
           <h1>{product.description}</h1>
           <p className="product-specs">{product.specs}</p>
           <p className="product-sizes">Available Sizes: {product.size}</p>
-          <p className="product-price">{product.price}$</p>
+          <p className="product-price">${product.price}</p>
 
           <div className="quantity-control">
             <button onClick={decreaseQuantity}>-</button>
