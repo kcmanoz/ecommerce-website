@@ -21,7 +21,7 @@ const TrendingItem = () => {
             </div>
             <div className="description">
               <p>{item.description}</p>
-              <p className="price">{item.price}$</p>
+              <p className="price">${item.price}</p>
             </div>
           </Link>
         </div>
