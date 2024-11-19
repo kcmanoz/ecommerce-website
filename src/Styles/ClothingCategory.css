@@ -25,7 +25,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(25% - 20px); /* 4 items per row with gap accounted */
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -51,42 +51,38 @@
 }
 
 .item-details h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  margin: 0 4px;
   color: #222;
-  min-height: 3.2rem;
+  min-height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.item-details p {
-  font-size: 1rem;
-  margin: 5px 0;
-  color: #666;
-}
-
 .item-specs {
-  font-size: 0.9rem;
-  color: #888;
-  height: 2.4rem;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 600;
+  margin: 0.5rem 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.item-price {
-  font-weight: bold;
-  color: #333;
-}
-
 .item-sizes {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 1rem;
+  color: #666;
 }
 
-/* Responsive design adjustclothingts */
+.item-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 1200px) {
   .clothing-item {
     width: calc(33.33% - 20px); /* 3 items per row */

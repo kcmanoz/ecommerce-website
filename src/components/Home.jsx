@@ -4,9 +4,10 @@ import trend from "../Images/Header/trending.jpg";
 import shoes from "../Images/Header/footwear.jpg";
 import men from "../Images/Header/men-clothing.jpg";
 import women from "../Images/Header/women-clothing.jpg";
+import TrendingSlider from "./TrendingSlider";
 import "../Styles/Home.css";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="home-container">
@@ -43,8 +44,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <TrendingSlider />
     </>
   );
-}
+};
 
 export default Home;

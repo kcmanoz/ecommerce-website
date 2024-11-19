@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Items } from "./Data";
+import { CartContext } from "../context/CartContext";
 import "../Styles/ProductDetail.css";
 
-function ProductDetail() {
+const ProductDetail = () => {
   const { id } = useParams();
   const product = Items.find((item) => item.id === parseInt(id));
 
-  if (!product) return <div>Product not found</div>;
+  const { addToCart } = useContext(CartContext);
+  const [quantity, setQuantity] = useState(1);
+
+  if (!product) {
+    return <div>Product not found</div>; // Early return for invalid product
+  }
+
+  // Handlers
+  const handleAddToCart = () => {
+    addToCart(product, quantity);
+  };
+
+  const increaseQuantity = () => {
+    setQuantity((prevQty) => prevQty + 1);
+  };
+
+  const decreaseQuantity = () => {
+    setQuantity((prevQty) => (prevQty > 1 ? prevQty - 1 : 1));
+  };
 
   return (
     <div className="product-detail">
@@ -20,14 +39,20 @@ function ProductDetail() {
           <p className="product-specs">{product.specs}</p>
           <p className="product-sizes">Available Sizes: {product.size}</p>
           <p className="product-price">{product.price}$</p>
-          <div className="product-actions">
-            <button className="add-to-cart">Add to Cart</button>
-            <button className="buy-now">Buy Now</button>
+
+          <div className="quantity-control">
+            <button onClick={decreaseQuantity}>-</button>
+            <span className="quantity"> {quantity}</span>
+            <button onClick={increaseQuantity}>+</button>
           </div>
+
+          <button className="add-to-cart" onClick={handleAddToCart}>
+            ADD TO CART
+          </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProductDetail;

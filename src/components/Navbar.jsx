@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
+import { CartContext } from "../context/CartContext";
 
-function Navbar() {
+const Navbar = () => {
+  const { cartItems } = useContext(CartContext);
+  const cartQuantity = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   return (
     <header>
       <nav className="navbar">
@@ -23,10 +30,18 @@ function Navbar() {
           <li className="navbar-item">
             <Link to="/shoes">Shoes</Link>
           </li>
+          <li className="navbar-item">
+            <Link to="/cart" className="cart-icon">
+              <i className="fas fa-shopping-cart"></i>
+              {cartQuantity > 0 && (
+                <span className="cart-quantity">{cartQuantity}</span>
+              )}
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Navbar;

@@ -5,7 +5,8 @@
   top: 0;
   width: 100%;
   position: fixed;
-  background-color: #2a2a2a;
+  background-color: #2c3e50;
+  color: #ecf0f1;
   padding: 1rem 8rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 99;
@@ -29,7 +30,7 @@
 .brand-name {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #f0f0f0;
   letter-spacing: 0.05em;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
@@ -45,6 +46,7 @@
   list-style: none;
   display: flex;
   gap: 4.5rem;
+  margin-right: 3rem;
 }
 
 .navbar-item {
@@ -76,4 +78,24 @@
 .navbar-item a:hover::after {
   width: 100%;
   display: inline-block;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -1.5rem;
+  left: 0.4rem;
+  background-color: #1bd82b;
+  color: #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.4rem;
 }

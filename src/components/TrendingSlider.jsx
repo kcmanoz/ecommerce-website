@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/TrendingSlider.css";
 import TrendingItem from "./TrendingItem";
 
-function TrendingSlider() {
+const TrendingSlider = () => {
   const slideLeft = () => {
     let slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 235;
@@ -33,6 +33,6 @@ function TrendingSlider() {
       </div>
     </div>
   );
-}
+};
 
 export default TrendingSlider;

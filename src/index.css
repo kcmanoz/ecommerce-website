@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
@@ -15,8 +16,23 @@ html {
   font-size: 62.5%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 19px;
+.Toastify__toast--success {
+  background-color: #ffffff !important;
+  color: #1c1636 !important;
+  font-size: small;
+  margin-top: 40px !important;
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545 !important;
+  color: #fff;
+  font-size: small;
+  margin-top: 40px !important;
+}
+
+.Toastify__toast--info {
+  background-color: #17a2b8 !important;
+  color: #fff;
+  font-size: small;
+  margin-top: 40px !important;
 }

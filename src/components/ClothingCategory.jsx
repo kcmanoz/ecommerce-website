@@ -25,8 +25,8 @@ const ClothingCategory = ({ items, category }) => {
               <div className="item-details">
                 <h3>{item.description}</h3>
                 <p className="item-specs">{item.specs}</p>
-                <p className="item-price">Price: ${item.price}</p>
                 <p className="item-sizes">Available Sizes: {item.size}</p>
+                <p className="item-price">Price: ${item.price}</p>
               </div>
             </Link>
           </div>
