@@ -134,7 +134,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
+  .product-detail {
+    margin-top: 15rem;
+  }
   .product-info h1 {
     font-size: 1.8rem;
   }

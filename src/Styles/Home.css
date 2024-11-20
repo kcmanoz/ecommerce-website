@@ -83,7 +83,7 @@ body {
   background-color: rgba(110, 141, 150, 0.5) !important;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .grid-container {
     height: 500px;
     display: grid;
@@ -97,18 +97,13 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .home-container {
+    margin-top: 18rem;
+  }
   .main-description {
     bottom: 1rem;
     left: 1rem;
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .main-description {
-    bottom: 1rem;
-    left: 0.5rem;
-    font-size: 2.5rem;
   }
 }

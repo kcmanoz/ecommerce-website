@@ -89,13 +89,16 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .clothing-item {
     width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  .clothing-category {
+    margin-top: 20rem;
+  }
   .clothing-item {
     width: 100%;
   }
