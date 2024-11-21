@@ -7,6 +7,7 @@ import ClothingCategory from './components/ClothingCategory';
 import ProductDetail from './components/ProductDetail';
 import Cart from "./components/Cart";
 import Banner from "./components/Banner";
+import ScrollToTop from './components/ScrollToTop';
 import Footer from "./components/Footer";
 import { CartProvider } from './context/CartContext';
 import { ToastContainer } from 'react-toastify';
@@ -16,6 +17,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
+        <ScrollToTop />
         <Navbar />
 
         <Routes>
