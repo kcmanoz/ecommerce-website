@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,18 +30,17 @@
 }
 
 .brand-name {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   color: #f0f0f0;
-  letter-spacing: 0.05em;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.1rem;
   margin: 0;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .brand-name:hover {
-  color: #2d96d2;
+  color: #0074cc;
 }
 
 .navbar-list {
