@@ -65,7 +65,7 @@
 
 .row-container {
   display: flex;
-  gap: 2.2rem;
+  gap: 6.2rem;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;

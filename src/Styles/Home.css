@@ -12,7 +12,7 @@ body {
 
 .home-container {
   padding-top: 5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
 
 .grid-container {
   display: grid;
-  height: 50rem;
+  height: 46rem;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "one two four" "one two four-low";
