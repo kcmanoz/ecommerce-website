@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-.brand-name {
+/* .brand-name {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 3.4rem;
@@ -37,10 +37,30 @@
   letter-spacing: 0.1rem;
   margin: 0;
   transition: color 0.3s ease;
+} */
+
+.brand-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: #f0f0f0;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.brand-name::before {
+  content: "EssenceWear";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  color: #726d6d;
+  z-index: -1;
 }
 
 .brand-name:hover {
-  color: #0074cc;
+  color: #bec6cb;
 }
 
 .navbar-list {
@@ -142,8 +162,13 @@
   }
 
   .brand-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
+  }
+
+  .brand-name::before {
+    top: 2px;
+    left: 1px;
   }
 
   .navbar-list {
